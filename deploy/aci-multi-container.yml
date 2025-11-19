@@ -44,7 +44,7 @@ properties:
   imageRegistryCredentials:
     - server: acrgps1215.azurecr.io
       username: tokenPull
-      password: "{{ AZURE_REGISTRY_PASSWORD }}"  # Sustituir por la password del token generado
+      password: h6i7SLrBnlq0W+rh+sZl0TvYrHAzc/k//kURYPLw8b+ACRBoOxzT #"{{ AZURE_REGISTRY_PASSWORD }}"  # Sustituir por la password del token generado
   ipAddress:
     type: Public
     ports:
