@@ -2,7 +2,7 @@ version: "3"
 services:
   # Base de Datos: MongoDB
   mongo:
-    image: samuelnotario/p2gps:db
+    image: nandolozano/p2gps:db
     deploy:
       replicas: 1
       resources:
@@ -21,7 +21,7 @@ services:
 
   # Microservicio de Órdenes
   order:
-    image: samuelnotario/p2gps:order
+    image: nandolozano/p2gps:order
     depends_on:
       # Asegura que 'mongo' se inicie antes que 'order'
       - mongo
@@ -38,7 +38,7 @@ services:
 
   # Interfaz Web / Frontend
   web:
-    image: samuelnotario/p2gps:web
+    image: nandolozano/p2gps:web
     deploy:
       replicas: 1
       resources:
