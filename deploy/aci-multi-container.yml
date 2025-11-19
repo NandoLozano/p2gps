@@ -5,7 +5,7 @@ properties:
   containers:
     - name: mongo
       properties:
-        image: acrgps[tuidunico].azurecr.io/p2gps:db
+        image: acrgps1215.azurecr.io/p2gps:db
         resources:
           requests:
             cpu: 0.15
@@ -18,7 +18,7 @@ properties:
             mountPath: /data/db
     - name: order
       properties:
-        image: acrgps[tuidunico].azurecr.io/p2gps:order
+        image: acrgps1215.azurecr.io/p2gps:order
         resources:
           requests:
             cpu: 0.3
@@ -32,7 +32,7 @@ properties:
             value: ordering
     - name: web
       properties:
-        image: acrgps[tuidunico].azurecr.io/p2gps:web
+        image: acrgps1215.azurecr.io/p2gps:web
         resources:
           requests:
             cpu: 0.25
@@ -42,9 +42,9 @@ properties:
         environmentVariables: []
   osType: Linux
   imageRegistryCredentials:
-    - server: acrgps[tuidunico].azurecr.io
+    - server: acrgps1215.azurecr.io
       username: tokenPull
-      password: <tu-password1>  # Pon aquí la password1 que generaste
+      password: h6i7SLrBnlq0W+rh+sZl0TvYrHAzc/k//kURYPLw8b+ACRBoOxzT  # Pon aquí la password1 que generaste
   ipAddress:
     type: Public
     ports:
